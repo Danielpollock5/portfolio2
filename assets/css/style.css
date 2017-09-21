@@ -30,8 +30,19 @@ Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 
+
+
+#homeCarousel > div > div:nth-child(1) > img{
+
+}
+.stretch{
+    height: 100%;
+    width:100%;
+}
 .carousel-inner > .item > img { 
- height: 600px;
+ height: 700px;
+ background-size: contain !important;
+
   } 
 
 body {
@@ -39,7 +50,7 @@ body {
     font-weight: 300;
     line-height: 24px;
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: #232323;
 }
 
@@ -54,7 +65,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -184,7 +195,9 @@ fieldset {
 * 03.HOMEPAGE CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
-
+/*.my_avatar{
+    display: none;
+}*/
 .welcome-area {
     height: 100%;
 }
@@ -198,11 +211,15 @@ fieldset {
 
 .welcome-image-area {
     position: relative;
-    height: 100%;
-    background: url(../images/bg/bg.jpg);
-    background-size: cover;
+    height: 100% auto;
+    background-image: url(../images/bg/bg.jpg) ;
+    background-size: cover !important ;
     z-index: 1;
+/*    background-position: center !important;*/
+    max-width: 100%; 
+    background-repeat: no-repeat !important;
 }
+
 
 .welcome-image-area:after {
     position: absolute;
@@ -249,7 +266,7 @@ fieldset {
     color: #fafafa;
     font-size: 80px;
     font-weight: 900;
-    text-transform: capitalize;
+/*    text-transform: capitalize;*/
 }
 
 .header-text .home-arrow-down {

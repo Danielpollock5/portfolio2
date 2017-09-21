@@ -6,7 +6,25 @@ Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 
+@media only screen(max-width: 990px){
+    .about-image{
+        display: none !important;
+    }
+/*    .my_avatar {
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+    margin-bottom: 50px;
+    display: show;
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    
 
+
+*/
+}
 /* Medium Layout: 1280px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1280px) {}
@@ -40,6 +58,9 @@ Version      : 1.0
      .about-text {
         padding-top: 0px;
         margin-top: 30px;
+    }
+    .about-image{
+        display: none !important;
     }
 }
 
@@ -150,12 +171,19 @@ Version      : 1.0
     .single-service i {
         margin-bottom: 105px;
     }
+    .about-image{
+        display: none !important;
+    }
 }
 
 
 /* Wide Mobile Layout: 480px. */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .about-image{
+        display: none !important;
+    }
+}
 
 
 /*
